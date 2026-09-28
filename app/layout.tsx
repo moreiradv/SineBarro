@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
+import { assetPath } from "@/lib/site-path";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Sine Barro | Seu próximo passo começa aqui",
   description: "Oportunidades de trabalho, qualificação e cidadania em Barro e região.",
-  other: {
-    "codex-preview": "development",
-  },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: assetPath("favicon.svg"),
+    shortcut: assetPath("favicon.svg"),
   },
 };
 

@@ -2,6 +2,20 @@
 
 Portal de apresentação para emprego, qualificação e cidadania em Barro–CE.
 
+Site: **https://moreiradv.github.io/SineBarro/**
+
+## GitHub Pages
+
+A publicação é automática a cada push na branch `main`, pelo workflow `.github/workflows/pages.yml`. Ele verifica o TypeScript, executa os testes e publica a exportação estática no GitHub Pages.
+
+Para gerar os mesmos arquivos localmente:
+
+```sh
+npm run build:pages
+```
+
+A pasta `out/` contém o site estático. Esse comando usa o compilador Next.js já instalado, com o prefixo `/SineBarro` para páginas, scripts, imagem e favicon. A execução local e a compilação para Workers continuam disponíveis pelos comandos abaixo. O GitHub Pages publica somente a demonstração, sem servidor de autenticação, banco de dados ou envio de candidaturas.
+
 ## Executar
 
 Requer Node.js 22.13 ou mais recente, com npm.
